@@ -14222,7 +14222,7 @@ var initializeMap = function(Maps) {
 
   // Set this user's position every 2.5 seconds. Runs as long as the tab with
   // the app is in the foreground.
-  getCurrentPosition();
+  getCurrentPosition(false);
   setInterval(() => { getCurrentPosition(true) }, 2500)
 
 }
