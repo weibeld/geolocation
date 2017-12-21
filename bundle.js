@@ -14133,8 +14133,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 // Code: https://github.com/vbario/geogeo
 // Video: http://youtu.be/fYxwRMaq6yY
 
-// Create bundle.js with:
-// webpack ./app.js bundle.js
+// Create executable bundle.js with:
+// webpack app.js bundle.js
 
 // Serve page by local server with:
 // http-server .
@@ -14153,7 +14153,7 @@ var firebase = __webpack_require__(87);
 var geoLocation = __webpack_require__(169);
 var loadGoogleMapsAPI = __webpack_require__(173);
 
-// Initialize Firebase
+// Initialize Firebase (code provided when creating new Firebase project)
 var config = {
   apiKey: "AIzaSyBsQjHsao_AJxq9Ema0IfiUJqP2ZVi1A5Y",
   authDomain: "geolocation-5e76d.firebaseapp.com",
@@ -14223,7 +14223,7 @@ var initializeMap = function(Maps) {
   // Set this user's position every 2.5 seconds. Runs as long as the tab with
   // the app is in the foreground.
   getCurrentPosition(false);
-  setInterval(() => { getCurrentPosition(true) }, 2500)
+  setInterval(() => { getCurrentPosition(true) }, 1000)
 
 }
 
